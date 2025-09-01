@@ -172,14 +172,14 @@ input:focus {
   border-radius: 12px;
 }
 .container-fluid .content .clock .hand.hour {
-  width: 3px;
-  height: 65px;
+  width: 4px;
+  height: 50px;
   background-color: #8b3cb4;
   z-index: 2;
 }
 .container-fluid .content .clock .hand.minute {
   width: 4px;
-  height: 50px;
+  height: 65px;
   background-color: #c688e7;
   z-index: 1;
 }
@@ -359,10 +359,10 @@ input:focus {
     transform: rotate(0deg) translateY(-125px);
   }
   .container-fluid .content .clock .hand.hour {
-    height: 55px;
+    height: 45px;
   }
   .container-fluid .content .clock .hand.minute {
-    height: 45px;
+    height: 55px;
   }
   .container-fluid .content .clock .hand.second {
     height: 65px;
@@ -427,10 +427,10 @@ input:focus {
     transform: rotate(0deg) translateY(-125px);
   }
   .container-fluid .content .clock .hand.hour {
-    height: 55px;
+    height: 45px;
   }
   .container-fluid .content .clock .hand.minute {
-    height: 45px;
+    height: 55px;
   }
   .container-fluid .content .clock .hand.second {
     height: 65px;
@@ -481,10 +481,10 @@ input:focus {
     transform: rotate(0deg) translateY(-125px);
   }
   .container-fluid .content .clock .hand.hour {
-    height: 55px;
+    height: 45px;
   }
   .container-fluid .content .clock .hand.minute {
-    height: 45px;
+    height: 55px;
   }
   .container-fluid .content .clock .hand.second {
     height: 65px;
