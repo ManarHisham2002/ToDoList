@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link rel="icon" type="Icon" href="img/icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="sass/all.min.css" />
+    <link rel="stylesheet" href="sass/bootstrap.min.css" />
+    <link rel="stylesheet" href="sass/index.css" />
+  </head>
+  <body>
+    <div
+      class="container-fluid d-flex justify-content-center align-items-center min-vh-100"
+    >
+      <div class="design">
+        <div class="top"></div>
+        <div class="left"></div>
+      </div>
+      <div class="content w-100 p-0">
+        <div
+          class="row d-flex justify-content-center justify-content-sm-start min-vh-100 align-items-start align-items-md-center"
+        >
+          <div class="col-lg-3 col-md-3 col-sm-12 position-relative z-0 p-0">
+            <div
+              class="info info-back d-flex flex-column justify-content-center align-items-center min-vh-100"
+            >
+              <div class="img-container position-relative">
+                <img
+                  id="userAvatar"
+                  class="user-img mt-5 mb-3"
+                  src="img/user-img.jpg"
+                  alt=""
+                />
+                <i
+                  id="changeAvatarBtn"
+                  class="fa-solid fa-camera camera-btn icon"
+                  onclick="openFiles()"
+                ></i>
+                <input
+                  id="avatarInput"
+                  type="file"
+                  accept="image/*"
+                  style="display: none"
+                  onchange="photo(event)"
+                />
+              </div>
+
+              <h2
+                class="mb-0 text-capitalize text-center text-light mt-5 p-3"
+                id="hiUser"
+              ></h2>
+            </div>
+            <i
+              class="fa-solid fa-arrow-right-from-bracket position-absolute top-0 end-0 p-4 z-2 text-light out-icon"
+              onclick="logOut()"
+            ></i>
+          </div>
+          <div
+            class="col-lg-3 col-md-3 col-sm-12 d-flex justify-content-center align-items-center pt-4"
+          >
+            <div class="clock">
+              <!-- Clock Numbers -->
+              <div class="number number3">3</div>
+              <div class="number number6">6</div>
+              <div class="number number9">9</div>
+              <div class="number number12">12</div>
+              <!-- Clock Hands -->
+              <div class="hand hour" id="hour"></div>
+              <div class="hand minute" id="minute"></div>
+              <div class="hand second" id="second"></div>
+            </div>
+          </div>
+          <div class="to-do-m-h col-lg-6 col-md-6 col-sm-12 min-vh-100 pt-5">
+            <div class="row">
+              <div class="col-lg-3 col-md-12 col-sm-12 mb-4">
+                <h3 class="text-capitalize">task list</h3>
+              </div>
+              <div class="col-lg-9 col-md-12 col-sm-12">
+                <div class="overlay" id="overlay">
+                  <div class="overlay-content">
+                    <h4>Write New Task</h4>
+                    <input
+                      id="new-task"
+                      type="text"
+                      class="mt-5 mb-3"
+                      placeholder="New Task"
+                    />
+                    <button class="mt-3" onclick="addTask()">Save</button>
+                    <button class="mt-3" onclick="hideOverLay()">Cancel</button>
+                  </div>
+                </div>
+                <div class="task-list mb-3">
+                  <h4
+                    class="text-capitalize d-flex justify-content-between align-items-center mb-3"
+                  >
+                    your tasks
+                    <div class="icon">
+                      <i class="fa-solid fa-plus" onclick="showOverLay()"></i>
+                    </div>
+                  </h4>
+                  <ul class="list" id="list"></ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/index.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

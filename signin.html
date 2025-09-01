@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link rel="icon" type="Icon" href="img/icon.png" />
+    <link rel="stylesheet" href="sass/bootstrap.min.css" />
+    <link rel="stylesheet" href="sass/index.css" />
+  </head>
+  <body>
+    <div
+      class="container-fluid d-flex justify-content-center align-items-center min-vh-100"
+    >
+      <div class="design">
+        <div class="top"></div>
+        <div class="left"></div>
+      </div>
+      <div class="content  mb-md-3">
+        <div class="info text-capitalize text-center mt-5 mb-5">
+          <h2>welcome back</h2>
+        </div>
+        <form class="d-flex flex-column align-items-center gap-4">
+          <img src="img/undraw_mobile_login_re_9ntv 1.png" alt="" />
+          <input type="email" id="email" placeholder="Enter E-Mail" />
+          <input type="password" id="password" placeholder="Password" />
+          <button id="submit" onclick="onLogIn(event)">login</button>
+        </form>
+        <p class="text-capitalize text-center mt-5 fs-5">
+          don't have an acount?<a class="text-decoration-none" href="register.html"> register</a>
+        </p>
+      </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
