@@ -1,6 +1,6 @@
 // Function to Go to a specific page
 moveTo = (link) => {
-  location.href = `../../To Do List/${link}`;
+  location.href = `../../ToDoList/${link}`;
 };
 
 // Declare Element
@@ -315,3 +315,4 @@ logOut = () => {
   // Move to master page
   moveTo("index.html");
 };
+
