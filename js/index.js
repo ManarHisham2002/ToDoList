@@ -77,7 +77,6 @@ onRegister = (event) => {
         // Show welcome message
         let currentUser = JSON.parse(localStorage.getItem("currentUser"));
         hiUser.textContent = `Welcome ${currentUser.userName}`;
-        console.log(currentUser.userName);
       } else {
         // If Passsword is less than 8 characters
         errorMsg(password, "Password less than 8 characters");
@@ -315,5 +314,6 @@ logOut = () => {
   // Move to master page
   moveTo("index.html");
 };
+
 
 
