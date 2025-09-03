@@ -20,7 +20,7 @@ const avatarInput = document.getElementById("avatarInput");
 // Function to Create Error Messege
 errorMsg = (element, msg) => {
   // Styling Element
-  element.style.cssText = "border: 1px solid red; transform: scale(1.1);";
+  element.style.cssText = "border: 1px solid #ee6981; transform: scale(1.1);";
   // Create Error Messege
   if (
     element.nextElementSibling &&
@@ -315,4 +315,5 @@ logOut = () => {
   // Move to master page
   moveTo("index.html");
 };
+
 
