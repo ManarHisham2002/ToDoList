@@ -110,7 +110,6 @@ onLogIn = (event) => {
     // Show welcome message
     let currentUser = JSON.parse(localStorage.getItem("currentUser"));
     hiUser.textContent = `Welcome ${currentUser.userName}`;
-    console.log(currentUser.userName);
   } else {
     // If user not found, check if email exists
     let isMail = users.some((user) => user.email === emailValue);
@@ -314,6 +313,7 @@ logOut = () => {
   // Move to master page
   moveTo("index.html");
 };
+
 
 
 
